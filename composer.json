@@ -6,19 +6,34 @@
         "cityware",
         "chart"
     ],
+    "authors": [
+        {
+            "name": "Fabricio S V Xavier",
+            "email": "fabricio@cityware.com.br",
+            "homepage": "http://www.cityware.com.br",
+            "role": "Developer"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/cityware/city-chart.git"
+        }
+    ],
     "homepage": "https://github.com/cityware/city-chart",
     "autoload": {
         "psr-4": {
             "Cityware\\Chart\\": "src/"
-        }
+        },
+        "psr-0": {
+            "Cityware\\Chart\\": "src/"
+        },
+        "classmap": [
+            "src/"
+        ]
     },
     "require": {
         "php": ">=5.3.23"
-    },
-    "autoload": {
-      "classmap": [
-        "src/"
-      ]
     },
     "require-dev": {
         "zendframework/zend-servicemanager": "~2.5",
@@ -28,7 +43,7 @@
     "suggest": {
         "ext-intl": "Required for most features of Zend\\I18n; included in default builds of PHP"
     },
-    "minimum-stability":"dev",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "extra": {
         "branch-alias": {
